@@ -1,0 +1,678 @@
+/*8F64AF : Ungu*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    z-index: 2;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+.search-button {
+    padding: 5px;
+    border: none;
+    background-color: #F8838B;
+    color: white;
+    border-radius: 50%; /* Mengubah border-radius menjadi 50% untuk membuat tombol bulat */
+    cursor: pointer;
+    display: flex; /* Membuat tombol menjadi flex container */
+    justify-content: center; /* Mengatur konten tombol ke tengah */
+    align-items: center; /* Mengatur konten tombol ke tengah */
+}
+.search-logo {
+    height: 20px;
+    width: 20px;
+}
+.search-button:hover {
+    background-color: #F8838B;
+}
+
+header .logo {
+    position: relative;
+    max-width: 300px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+    top: -85px;
+}
+
+.content .textBox h2 {
+    color: #0D1717;
+    font-size: 2em;
+    line-height: 1.7em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+.content .textBox h3 {
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.content .textBox p {
+    color: #0D1717;
+    line-height: 1.7em;
+}
+.content .textBox a {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 20px 0;
+    background-color: #F8A3A9;
+    color: #0D1717;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: background-color 1s ease;
+    
+}
+.content .textBox a:hover {
+    background-color: #8F64AF;
+    color: white;
+
+}
+.kotak {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 105vh;
+    width: 100vw;
+    background: #F8838B;
+    z-index: ;
+    max-width: 100%;
+}
+.imagesContainer {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    
+}
+
+.imagesContainer img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+
+.laptop {
+    padding: 10px;
+    width: 350px;
+    top: 10px;
+    left: 60px;
+    z-index: 2;
+    transition: transform .4s;
+    margin: 0 auto;
+}
+.laptop:hover {
+    transform: scale(1.3);
+}
+
+.dress {
+    width: 400px;
+    top: -260px;
+    left: 210px;
+    z-index: 3;
+    transition: transform .4s;
+    margin: 0 auto;
+}
+.dress:hover {
+    transform: scale(1.3);
+}
+
+.pan {
+    width: 380px;
+    top: -300px;
+    left: 480px;
+    z-index: 2;
+    transition: transform .4s;
+    margin: 0 auto;
+}
+.pan:hover {
+    transform: scale(1.3);
+}
+
+.bike {
+    width: 650px;
+    top: -50px;
+    left: 450px;
+    z-index: 5;
+    overflow: visible;
+    transition: transform .4s;
+    margin: 0 auto;
+}
+.bike:hover {
+    transform: scale(1.3);
+}
+
+.bag {
+    width: 360px;
+    top: -200px;
+    left: -50px;
+    z-index: 1;
+    overflow: visible;
+    transition: transform .4s;
+    margin: 0 auto;
+}
+.bag:hover {
+    transform: scale(1.3);
+}
+.Group1 {
+    height: 300px;
+    width: 300px;
+    left: 590px;
+    top: -249px;
+    overflow: visible;
+    z-index: 1;
+}
+.currency {
+    width: 120px;
+    height: 120px;
+    bottom: -200px;
+    left: -570px;    
+}
+.resource {
+    width: 120px;
+    height: 120px;
+    bottom: -200px;
+    left: -360px;    
+}
+.community {
+    width: 120px;
+    height: 120px;
+    bottom: -200px;
+    left: -150px;    
+}
+.environment {
+    width: 120px;
+    height: 120px;
+    bottom: -340px;
+    left: -450px;    
+}
+.cost {
+    width: 120px;
+    height: 120px;
+    bottom: -340px;
+    left: -250px;    
+}
+.barter {
+    width: 800px;
+    bottom: -3630px;
+    height: 250px;
+    left: 180px;
+    z-index: 1;
+}
+.upload {
+    width: 800px;
+    bottom: -1950px;
+    height: 250px;
+    left: 180px;
+    z-index: 1;
+
+}
+.request {
+    width: 800px;
+    bottom: -2800px;
+    height: 120px;
+    left: -680px;
+}
+.browse {
+    max-width: 100%;
+    bottom: -1150px;
+    height: auto;
+    left: -680px;
+}
+.text-browse {
+    position: relative;
+    display: flex;
+    font-family: 'Public Sans';
+}
+.text-browse h1 {
+    bottom: -600px;
+    left:   -700px;
+    position: absolute;
+    color: #8F64AF;
+    font-size: 2em;
+    font-weight: bold;
+}
+.text-browse h2 {
+    bottom: -800px;
+    left:   -700px;
+    max-width: 500px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+.text-upload {
+    position: relative;
+    display: flex;
+
+}
+.text-upload h1 {
+    bottom: -1500px;
+    left:   -1148px;
+    position: absolute;
+    color: #8F64AF;
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 1;
+
+}
+.text-upload h2 {
+    bottom: -1700px;
+    left:   -1148px;
+    max-width: 500px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1.2em;
+    z-index: 1;
+    font-weight: normal;
+}
+.kotak-upload {
+    position: absolute;
+    top: 1600px;
+    left: 0;
+    height: 98vh;
+    width: 100vw;
+    background: #F9F9F9;
+    z-index: 0; 
+}
+.text-request {
+    position: relative;
+    display: flex;
+
+}
+.text-request h1 {
+    bottom: -2340px;
+    left:   -700px;
+    max-width: 500px;
+    position: absolute;
+    color: #8F64AF;
+    font-size: 2em;
+    font-weight: bold;
+}
+.text-request h2 {
+    bottom: -2460px;
+    left:   -700px;
+    max-width: 500px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+.text-barter {
+    position: relative;
+    display: flex;
+    
+
+}
+.text-barter h1 {
+    bottom: -3200px;
+    left:   -1148px;
+    position: absolute;
+    color: #8F64AF;
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 1;
+    
+}
+.text-barter h2 {
+    bottom: -3340px;
+    left:   -1148px;
+    max-width: 500px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1.2em;
+    z-index: 1;
+    font-weight: normal;
+}
+.kotak-barter {
+    position: absolute;
+    top: 3250px;
+    left: 0;
+    height: 98vh;
+    width: 100vw;
+    background: #F8838B;
+    z-index: 0; 
+}
+.android {
+    width: 300px;
+    bottom: -1350px;
+    left: 330px;
+}
+.apple {
+    width: 320px;
+    bottom: -1265px;
+    left: -360px;
+}
+.trade {
+    width: 700px;
+    bottom: -4500px;
+    left: -600px;
+}
+.why {
+    position: relative;
+    display: flex;
+}
+.why h1{
+    bottom: -3850px;
+    left:   -889px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 2.5em;
+}
+.check2 {
+    width: 40px;
+    bottom: -4122px;
+    left: 220px;
+}
+.check3 {
+    width: 40px;
+    bottom: -4384px;
+    left: 220px;
+}
+.check4 {
+    width: 40px;
+    bottom: -4254px;
+    left: 220px;
+}
+.check5 {
+    width: 40px;
+    bottom: -3990px;
+    left: 220px;
+    
+}
+.benefit1 {
+    position: relative;
+    display: flex;
+}
+.benefit1 h1 {
+    bottom: -3990px;
+    left:   -580px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.benefit1 h2 {
+    bottom: -4070px;
+    left:   -580px;
+    max-width: 500px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.benefit2 {
+    position: relative;
+    display: flex;
+}
+.benefit2 h1 {
+    bottom: -4122px;
+    left:   -580px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.benefit2 h2 {
+    bottom: -4202px;
+    left:   -580px;
+    max-width: 500px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.benefit3 {
+    position: relative;
+    display: flex;
+}
+.benefit3 h1 {
+    bottom: -4252px;
+    left:   -580px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.benefit3 h2 {
+    bottom: -4332px;
+    left:   -580px;
+    max-width: 500px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.benefit4 {
+    position: relative;
+    display: flex;
+}
+.benefit4 h1 {
+    bottom: -4382px;
+    left:   -580px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.benefit4 h2 {
+    bottom: -4462px;
+    left:   -580px;
+    max-width: 500px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.kotak-review {
+    position: absolute;
+    top: 2500px;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    background: #F8838B;
+    z-index: 0; 
+}
+.profile {
+    width: 200px;
+    height: auto;
+    bottom: -2470px;
+    left: -580px;
+    z-index: 1;
+}
+.review-text {
+    bottom: -2200px;
+    left:   408px;
+    max-width: 1000px;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    z-index: 1;
+}
+.percaya {
+    position: relative;
+    display: flex;
+}
+.percaya h1{
+    bottom: -4650px;
+    left:   -880px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 2.5em;
+}
+.percaya h3 {
+    bottom: -4700px;
+    left:   -1100px;
+    max-width: 700px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 0.9em;
+    font-weight: normal;
+    text-align: center;
+}
+.gojek {
+    width: 270px;
+    bottom: -4955px;
+    left: -600px;
+    margin: auto;
+    z-index: 1;
+}
+.google {
+    width: 200px;
+    bottom: -4890px;
+    left: -280px;
+    margin: auto;
+    z-index: 1;
+}
+.dana {
+    width: 200px;
+    bottom: -4840px;
+    left: 300px;
+    margin: auto;
+    z-index: 1;
+}
+.BCA {
+    width: 200px;
+    bottom: -4890px;
+    margin: auto;
+    z-index: 1;
+    
+}
+.JNE {
+    width: 170px;
+    bottom: -4885px;
+    left: 600px;
+    margin: auto;
+    z-index: 1;
+}
+.social {
+    position: relative;
+    display: flex;
+}
+.social h1 {
+    bottom: -5100px;
+    left:   -1000px;
+    position: absolute;
+    color: #0D1717;
+    font-size: 2.2em;
+}
+.thomas {
+    width: 400px;
+    bottom: -5585px;
+    left: -500px;
+    margin: auto;
+    z-index: 1;
+    transition: transform .4s;
+    margin: 0 auto;
+}
+.thomas:hover {
+    transform: scale(1.1);
+}
+.aris {
+    width: 400px;
+    bottom: -5585px;
+    left: -80px;
+    margin: auto;
+    z-index: 1;
+    transition: transform .4s;
+    margin: 0 auto;
+}
+.aris:hover {
+    transform: scale(1.1);
+}
+.ratna {
+    width: 400px;
+    bottom: -5585px;
+    left: 340px;
+    margin: auto;
+    z-index: 1;
+    transition: transform .4s;
+    margin: 0 auto;
+}
+.ratna:hover {
+    transform: scale(1.1);
+}
+
+
+
